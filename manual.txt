@@ -1,0 +1,6 @@
+Note !!!
+
+To run backend
+>>>> node backend/index.js
+
+

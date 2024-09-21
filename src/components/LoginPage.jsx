@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
 import InputField from "./InputField";
-import {useNavigate} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom';
+import '../index.css';
+
+
 
 const LoginPage = () => {
     const [username, setUsername] = useState("");
@@ -18,7 +21,7 @@ const LoginPage = () => {
             });
             if (response.data.role === 'Pegawai' || response.data.role === 'Admin') {
                 console.log("Redirect to Pegaiwai/Admin Dashboard");
-                navigate('/dashboard');
+                navigate('/dashboard/welcome');
             } else {
                 setError("Who are you?");
             }

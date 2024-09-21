@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const InputField = ({ id, label, type, value, onChange }) => {
     return (
         <div className="mb-4">
